@@ -1,0 +1,123 @@
+/*como se hace el reseteo| se utiliza el selector universal *  le saco el margen y el relleno con el margin y el pading*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* deefino la unidad de todo mi elemento html */
+html{
+    font-size: 20px;
+ }
+
+/*esto es un comentario en css*/
+/*sintaxis de css| selector puede ser una etiqueta de HTML 
+propiedad es el atributo que le vamos a dar a las etiquetas
+
+selector(a quien le quiero agregar) {
+    unapropiedad:unvalor
+}
+*/
+
+
+h1{
+    color: green;
+}
+
+/*para individualizar los elementos de html puedo utilizar clases*/
+
+.textoh1{
+    color: brown;
+}
+
+
+
+/*individualizar con ID*/
+
+#servicios{
+    background-color: khaki;
+}
+
+/*la diferencia entre class y id, es que class se puede reutilizar en cambio id no
+el id es como tu DNI, la class es como un atributo tuyo
+
+ID=para vincular enlaces, identificar una seccion completa o javascript u otros lenguajes
+
+class=lo vamos a usar todo el tiempo*/
+
+/*propiedades para textos*/
+
+.textop{
+    color: blue;
+    text-align: right;
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*unidades de medida*/
+
+/*unidades absolutas| decimos que son absolutas porque no cambian su tamano en distintas pantallas
+
+cm-pt-mt
+
+
+
+unidades relativas | en DW son las que se adaptan al tipo de pantalla 
+
+200px
+200%
+2em
+2vh
+2vw*/
+
+.textoh1{
+    font-size: 18px;
+}
+
+#pie-de-pagina{
+    background-color: aquamarine;
+    /*es el 50% de cualquier pantalla en la que estemos mirando ese footer*/
+    width: 50%;
+}
+
+/*rem | es una unidad de medida relativa al elemento root | root es la medida general que nos da el navegador | normalmente es 16px*/
+
+/* a{ 
+   font-size: 2rem;  16x2 si es 4 rem seria 16x4 
+} */
+
+/* em | es relativa al elemento html o :root que son definidos por nosotros mismos */
+
+
+a{
+    font-size: 4em;
+}
+
+/* cual y en donde usamos las unidades? */
+
+/* pueden usar la que quieran y donde quieran
+
+parrafos,titulos,enlaces,suelen tener px en el font-size 
+las imagenes y videos o multimedia suelen utilizar el %, vh,vw 
+las propiedades de la caja, margin y padding pueden usar rem o em*/
+
+
+/* imagen de fondo en la pagina
+voy al body, backgraund img utiliza url 
+url() es una funcion, lo que hace es preguntarme donde esta la imagen que queres poner de fondo, utilizando comillas
+*/
+
+body{
+    background-image: url();
+    /* utilizando las propiedades 
+    backraund-size: cover
+    backgraud-position:center 
+    */
+}
+
+/*  como hacer que la imagen quede fija en la pagina backgraund-attachment:fixed */
